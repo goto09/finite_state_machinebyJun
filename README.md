@@ -17,7 +17,8 @@ enum StateID
 	NoState
 };
 
-if add new status as require, only change need to be done is:
+if add new status as require, only changes need to be done is:
 1. code new state class
 2. add state name to enum StateID
 3. add state name to the list FSMs_[] in FSMManager::InitFSM
+4. add trigger condition to ObjectState::CheckState
